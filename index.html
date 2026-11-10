@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog HAKKEN SEIKO </title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0b132b',
+                            dark: '#1c2541',
+                            blue: '#3a506b',
+                            neon: '#00f5d4',
+                            amber: '#fb5607',
+                            gold: '#ffbe0b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-neon selection:text-brand-navy">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-amber via-brand-gold to-brand-neon flex items-center justify-center text-brand-navy font-black text-xl shadow-lg shadow-brand-gold/20">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">HAKKEN SEIKO INDONESIA</span>
+                    <span class="block text-[10px] tracking-widest text-brand-neon font-semibold uppercase">Premium Signage Solution</span>
+                </div>
+            </div>
+
+            <!-- Quick Contacts -->
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <div class="flex items-center gap-2 text-slate-300">
+                    <i class="fa-solid fa-clock text-brand-gold"></i>
+                    <span>Buka: Sen - Sab (08.30 - 17.00)</span>
+                </div>
+                <div class="flex items-center gap-2 text-slate-300">
+                    <i class="fa-solid fa-phone text-brand-neon"></i>
+                    <span class="font-semibold">+62 857-9949-4999</span>
+                </div>
+                <button onclick="contactWhatsAppDirect()" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-emerald-500/20 flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    Konsultasi Gratis
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-brand-navy text-white overflow-hidden py-14 lg:py-20">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-neon/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-dark/80 border border-slate-700 text-brand-gold text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-certificate"></i> Produsen & Spesialis Reklame Terpercaya
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-white">
+                        Tingkatkan Visibilitas Bisnis Anda dengan <span class="bg-gradient-to-r from-brand-gold via-brand-amber to-brand-neon bg-clip-text text-transparent">Reklame Modern</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+                        Katalog pembuatan Neon Box, Huruf Timbul Akrilik/Stainless, Neon Flex, hingga Pylon Sign. Dilengkapi galeri foto real, infografis material, dan video display interaktif.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-left">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-brand-neon shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <span class="text-xs font-medium text-slate-300">Garansi LED s/d 1 Tahun</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-brand-gold shrink-0">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <span class="text-xs font-medium text-slate-300">Pengerjaan Tepat Waktu</span>
+                        </div>
+                        <div class="flex items-center gap-3 col-span-2 sm:col-span-1">
+                            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-brand-amber shrink-0">
+                                <i class="fa-solid fa-compass-drafting"></i>
+                            </div>
+                            <span class="text-xs font-medium text-slate-300">Free Mockup & Desain 3D</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Showroom Reklame" class="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card border border-white/20 text-slate-900 shadow-xl">
+                            <p class="text-xs font-bold uppercase tracking-wider text-brand-amber">Project Highlight</p>
+                            <h3 class="font-bold text-base">Neon Box Acrylic Backlit Premium</h3>
+                            <p class="text-xs text-slate-600 mt-1">Solusi pencahayaan toko modern dengan LED modul super terang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG MAIN CONTENT SECTION -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow w-full">
+        <!-- Title & Search Bar -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">Katalog Produk Reklame</h2>
+                <p class="text-slate-500 text-sm mt-1">Klik pada kartu produk untuk melihat galeri foto, infografis bahan, dan video demonstrasi.</p>
+            </div>
+            
+            <div class="relative w-full md:w-72">
+                <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Cari produk Reklame..." class="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue transition shadow-sm">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+            </div>
+        </div>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-none mb-8 -mx-4 px-4 sm:mx-0 sm:px-0">
+            <button onclick="setCategory('all')" class="category-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all duration-200 bg-brand-navy text-white shadow-md shadow-brand-navy/20">
+                <i class="fa-solid fa-border-all mr-1.5"></i> Semua Produk
+            </button>
+            <button onclick="setCategory('neonbox')" class="category-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                <i class="fa-solid fa-box-open mr-1.5"></i> Neon Box
+            </button>
+            <button onclick="setCategory('huruftimbul')" class="category-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                <i class="fa-solid fa-font mr-1.5"></i> Huruf Timbul
+            </button>
+            <button onclick="setCategory('neonflex')" class="category-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                <i class="fa-solid fa-bolt mr-1.5"></i> Neon Flex Custom
+            </button>
+            <button onclick="setCategory('pylon')" class="category-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                <i class="fa-solid fa-monument mr-1.5"></i> Pylon & Totem Sign
+            </button>
+            <button onclick="setCategory('acrylic')" class="category-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                <i class="fa-solid fa-sheet-plastic mr-1.5"></i> Reklame Acrylic
+            </button>
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Cards rendered via JS -->
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div id="emptyState" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300">
+            <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto text-slate-400 text-2xl mb-4">
+                <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800">Produk Tidak Ditemukan</h3>
+            <p class="text-sm text-slate-500 mt-1 max-w-md mx-auto">Coba gunakan kata kunci pencarian lain atau ubah filter kategori produk.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-navy border-t border-slate-800 text-slate-400 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-3 md:col-span-2">
+                <div class="flex items-center gap-2 text-white font-extrabold text-xl">
+                    <i class="fa-solid fa-lightbulb text-brand-gold"></i> HAKKEN SEIKO INDONESIA
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-md">
+                    Spesialis manufaktur reklame dan Reklame profesional. Melayani pembuatan Neon Box Akrilik, Huruf Timbul Stainless/Acrylic, Neon Flex Aesthetic, hingga Reklame K3 & Directional.
+                </p>
+                <div class="flex items-center gap-3 pt-2 text-slate-300">
+                    <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4 border-l-2 border-brand-gold pl-2">Kategori Produk</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" onclick="setCategory('neonbox')" class="hover:text-white transition">Neon Box Akrilik & Vinyl</a></li>
+                    <li><a href="#" onclick="setCategory('huruftimbul')" class="hover:text-white transition">Huruf Timbul Stainless/Acrylic</a></li>
+                    <li><a href="#" onclick="setCategory('neonflex')" class="hover:text-white transition">Neon Flex Kafe & Interior</a></li>
+                    <li><a href="#" onclick="setCategory('pylon')" class="hover:text-white transition">Pylon Sign SPBU & Perusahaan</a></li>
+                    <li><a href="#" onclick="setCategory('acrylic')" class="hover:text-white transition">Acrylic Board Reklame</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4 border-l-2 border-brand-neon pl-2">Alamat & Workshop</h4>
+                <p class="text-xs leading-relaxed">
+                    Jl. Kalilarangan no.31, Serengan, Jayengan, Surakarta
+                </p>
+                <p class="text-xs text-slate-300 font-semibold mt-3">Email: hakkenseikoindonesia01@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
+            &copy; 2026 Hakken Seiko Indonesia. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- PRODUCT DETAIL POPUP MODAL (ENHANCED MULTIMEDIA & VIDEO) -->
+    <div id="productModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+        <!-- Backdrop Overlay -->
+        <div onclick="closeModal()" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity duration-300"></div>
+
+        <!-- Modal Box -->
+        <div class="relative bg-white w-full max-w-5xl rounded-2xl shadow-2xl overflow-hidden z-10 flex flex-col md:flex-row max-h-[92vh] my-auto transition-all transform duration-300 scale-95 opacity-0" id="modalContainer">
+            
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-30 w-9 h-9 rounded-full bg-slate-900/70 text-white hover:bg-black flex items-center justify-center transition focus:outline-none shadow-lg">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- LEFT SIDE: MULTIMEDIA DISPLAY (IMAGES & VIDEO) -->
+            <div class="w-full md:w-1/2 bg-slate-950 flex flex-col justify-between shrink-0 border-b md:border-b-0 md:border-r border-slate-800">
+                
+                <!-- Media View Container (Image / Video Embed) -->
+                <div class="relative w-full h-64 sm:h-80 md:h-full bg-black flex items-center justify-center overflow-hidden">
+                    
+                    <!-- Image View Target -->
+                    <div id="imageViewWrapper" class="w-full h-full flex items-center justify-center relative">
+                        <img id="modalMainImage" src="" alt="Main Showcase" class="w-full h-full object-cover transition-opacity duration-300">
+                        <!-- Image Badge Label (e.g. Infografis, Foto Real, Pemasangan) -->
+                        <span id="imageTypeBadge" class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-brand-gold border border-brand-gold/30 text-[10px] font-bold px-3 py-1 rounded-md uppercase tracking-wider">
+                            Foto Real Produk
+                        </span>
+                    </div>
+
+                    <!-- Video View Target (YouTube Embed) -->
+                    <div id="videoViewWrapper" class="hidden w-full h-full bg-black flex items-center justify-center">
+                        <iframe id="modalYoutubeIframe" class="w-full h-full border-0" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Category Badge -->
+                    <span id="modalCategoryBadge" class="absolute bottom-4 left-4 bg-brand-navy/90 text-brand-neon border border-brand-neon/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Category
+                    </span>
+                </div>
+
+                <!-- MEDIA SELECTOR CONTROLS (TABS & THUMBNAILS) -->
+                <div class="p-3 sm:p-4 bg-slate-900 border-t border-slate-800/80">
+                    <!-- Media Type Toggle Buttons -->
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Media Galeri:</span>
+                        <div class="flex gap-1 bg-slate-950 p-1 rounded-lg border border-slate-800">
+                            <button id="btnTabPhoto" onclick="switchMediaTab('photo')" class="px-3 py-1 rounded-md text-xs font-bold transition bg-brand-blue text-white shadow">
+                                <i class="fa-solid fa-images mr-1"></i> Foto & Grafik
+                            </button>
+                            <button id="btnTabVideo" onclick="switchMediaTab('video')" class="px-3 py-1 rounded-md text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-circle-play text-red-500 mr-1"></i> Video YouTube
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Thumbnails List (Hidden if Video mode active) -->
+                    <div id="thumbnailContainer" class="grid grid-cols-3 gap-2">
+                        <!-- Thumbnails injected dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: PRODUCT DETAILS & WA ORDER -->
+            <div class="w-full md:w-1/2 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto custom-scrollbar bg-white">
+                <div class="space-y-4">
+                    <!-- Title & Price -->
+                    <div>
+                        <h3 id="modalTitle" class="text-xl sm:text-2xl font-extrabold text-slate-900">Nama Produk</h3>
+                        <div class="flex items-baseline gap-2 mt-1.5">
+                            <span class="text-xs text-slate-500 uppercase font-semibold">Estimasi Biaya:</span>
+                            <span id="modalPrice" class="text-lg sm:text-xl font-extrabold text-brand-amber">Rp 0</span>
+                        </div>
+                    </div>
+
+                    <!-- Short Description -->
+                    <p id="modalDescription" class="text-xs sm:text-sm text-slate-600 leading-relaxed border-b border-slate-100 pb-4">
+                        Deskripsi singkat produk Reklame.
+                    </p>
+
+                    <!-- Material Specifications Grid -->
+                    <div class="space-y-2">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                            <span>Spesifikasi Material:</span>
+                            <span class="text-[10px] text-brand-blue font-semibold"><i class="fa-solid fa-circle-info mr-1"></i>Lihat Infografis di foto #2</span>
+                        </h4>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
+                                <span class="block text-slate-400 text-[10px]">Bahan / Frame:</span>
+                                <span id="modalSpecMaterial" class="font-bold text-slate-700">Acrylic / Stainless</span>
+                            </div>
+                            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
+                                <span class="block text-slate-400 text-[10px]">Pencahayaan:</span>
+                                <span id="modalSpecLighting" class="font-bold text-slate-700">LED Backlit</span>
+                            </div>
+                            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
+                                <span class="block text-slate-400 text-[10px]">Penggunaan:</span>
+                                <span id="modalSpecUsage" class="font-bold text-slate-700">Indoor / Outdoor</span>
+                            </div>
+                            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
+                                <span class="block text-slate-400 text-[10px]">Garansi LED:</span>
+                                <span id="modalSpecWarranty" class="font-bold text-emerald-600">12 Bulan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom Order Options -->
+                    <div class="space-y-3 pt-2">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Pilihan Ukuran Rekomendasi:</label>
+                            <select id="modalSizeSelect" class="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-slate-800 font-semibold focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                                <option value="Custom Ukuran Sesuai Lokasi">Custom Sesuai Lokasi (Diukur saat survei)</option>
+                                <option value="60cm x 40cm">60cm x 40cm (Kecil / Toko Minimalis)</option>
+                                <option value="120cm x 60cm">120cm x 60cm (Sedang / Fasad Standard)</option>
+                                <option value="200cm x 100cm">200cm x 100cm (Besar / Outdoor Utama)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Opsi Tipe Pencahayaan:</label>
+                            <select id="modalLightSelect" class="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-slate-800 font-semibold focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                                <option value="LED Modul Samsung Waterproof">LED Modul Samsung Waterproof (+Sensor Daylight)</option>
+                                <option value="LED Strip Standard High Brightness">LED Strip Standard High Brightness</option>
+                                <option value="Tanpa Lampu (Non-Illuminated)">Tanpa Lampu / Non-Illuminated</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WA Order Action Button -->
+                <div class="pt-6 mt-4 border-t border-slate-100">
+                    <button onclick="sendWhatsAppOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2 text-sm uppercase tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Pesan / Minta Penawaran
+                    </button>
+                    <p class="text-[11px] text-center text-slate-400 mt-2">
+                        *Tim teknis kami akan langsung merespons via WA untuk survei lokasi & hitung RAB resmi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK WHATSAPP FLOATING BUTTON -->
+    <div class="fixed bottom-6 right-6 z-30">
+        <button onclick="contactWhatsAppDirect()" class="group relative flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105">
+            <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out text-xs font-bold tracking-wider uppercase hidden sm:inline-block">
+                Tanya Spesifikasi
+            </span>
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-400"></span>
+            </span>
+        </button>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Database Produk Reklame dengan Galeri Gambar (Multi-Photo, Infografik) & Video Youtube
+        const productsData = [
+            {
+                id: 1,
+                name: "Neon Box Acrylic Backlit Premium",
+                category: "neonbox",
+                categoryLabel: "Neon Box",
+                price: "Rp 1.400.000 / m²",
+                // Multi Gallery Images: 1. Foto Real, 2. Infografik Spesifikasi, 3. Hasil Terpasang
+                gallery: [
+                    {
+                        url: "img/001.jpeg",
+                        type: "Foto Real Produk",
+                        thumbLabel: "Foto Real"
+                    },
+                    {
+                        url: "https://placehold.co/800x800/0b132b/00f5d4?text=INFOGRAFIK+MATERIAL%0A-%0A1.+Akrilik+3mm+Susu%0A2.+Sticker+Cutting+Vinyl%0A3.+LED+Samsung+IP67%0A4.+Frame+Aluminium+Profil",
+                        type: "Infografis Spesifikasi Material",
+                        thumbLabel: "Infografis"
+                    },
+                    {
+                        url: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+                        type: "Hasil Pemasangan di Lokasi Klien",
+                        thumbLabel: "Portofolio"
+                    }
+                ],
+                youtubeEmbed: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0",
+                description: "Neon Box berdaya tahan tinggi menggunakan akrilik susu 3mm dengan visual sticker cutting / UV print resolusi tinggi. Dilengkapi kerangka besi hollo anti karat dan pencahayaan LED modul waterproof.",
+                material: "Akrilik 3mm + Lis Aluminium",
+                lighting: "LED Modul Samsung Waterproof",
+                usage: "Outdoor / Indoor Fasad Toko",
+                warranty: "12 Bulan (Lampu & Trafo)",
+                popular: true
+            },
+            {
+                id: 2,
+                name: "Huruf Timbul Stainless Steel Mirror",
+                category: "huruftimbul",
+                categoryLabel: "Huruf Timbul",
+                price: "Rp 12.000 / cm",
+                gallery: [
+                    {
+                        url: "https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=800&q=80",
+                        type: "Foto Real Produk",
+                        thumbLabel: "Foto Real"
+                    },
+                    {
+                        url: "https://placehold.co/800x800/1c2541/ffbe0b?text=INFOGRAFIK+STAINLESS%0A-%0A1.+Plat+Stainless+304%0A2.+Ketebalan+0.8mm%0A3.+Laser+Cut+Precision%0A4.+Anti+Karat+Outdoor",
+                        type: "Infografis Spesifikasi Material",
+                        thumbLabel: "Infografis"
+                    },
+                    {
+                        url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+                        type: "Hasil Pemasangan Lobby Kantor",
+                        thumbLabel: "Portofolio"
+                    }
+                ],
+                youtubeEmbed: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0",
+                description: "Huruf Timbul eksklusif dari plat Stainless Steel 304 dengan finishing kilap (mirror) atau hairline. Elegan untuk logo perusahaan di resepsionis maupun fasad kantor utama.",
+                material: "Stainless Steel Grade 304",
+                lighting: "Non-LED / Backlit Nyala Belakang",
+                usage: "Lobby Kantor / Receptionist",
+                warranty: "24 Bulan (Anti Karat)",
+                popular: true
+            },
+            {
+                id: 3,
+                name: "Neon Flex Custom Aesthetic Cafe",
+                category: "neonflex",
+                categoryLabel: "Neon Flex",
+                price: "Rp 450.000 / Set",
+                gallery: [
+                    {
+                        url: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+                        type: "Foto Real Produk",
+                        thumbLabel: "Foto Real"
+                    },
+                    {
+                        url: "https://placehold.co/800x800/0b132b/fb5607?text=INFOGRAFIK+NEON+FLEX%0A-%0A1.+Silicone+Flex+12V%0A2.+Alas+Akrilik+Bening+3mm%0A3.+Laser+Cutting+Contour%0A4.+Low+Voltage+Hemat+Listrik",
+                        type: "Infografis Spesifikasi Material",
+                        thumbLabel: "Infografis"
+                    },
+                    {
+                        url: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+                        type: "Hasil Pemasangan di Kafe",
+                        thumbLabel: "Portofolio"
+                    }
+                ],
+                youtubeEmbed: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0",
+                description: "Neon Flex fleksibel modern dipasang di atas papan alas akrilik bening CNC presisi. Sangat populer untuk tulisan quote aesthetic kafe, spot foto Instagramable, dan dekorasi kamar.",
+                material: "Silicone Neon Flex + Akrilik Bening 3mm",
+                lighting: "DC12V Neon Flex Ultra-Bright",
+                usage: "Indoor Kafe / Resto / Spot Foto",
+                warranty: "6 Bulan",
+                popular: false
+            },
+            {
+                id: 4,
+                name: "Pylon Sign Stand SPBU & Perusahaan",
+                category: "pylon",
+                categoryLabel: "Pylon & Totem",
+                price: "Rp 8.500.000 / Unit",
+                gallery: [
+                    {
+                        url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+                        type: "Foto Real Produk",
+                        thumbLabel: "Foto Real"
+                    },
+                    {
+                        url: "https://placehold.co/800x800/0b132b/00f5d4?text=INFOGRAFIK+PYLON+SIGN%0A-%0A1.+Konstruksi+Besi+H-Beam%0A2.+Cover+ACP+Seven+Outdoor%0A3.+Huruf+Timbul+Akrilik+LED%0A4.+Pondasi+Cakar+Ayam",
+                        type: "Infografis Kontruksi Pylon",
+                        thumbLabel: "Infografis"
+                    },
+                    {
+                        url: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80",
+                        type: "Hasil Pemasangan Gedung Utama",
+                        thumbLabel: "Portofolio"
+                    }
+                ],
+                youtubeEmbed: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0",
+                description: "Reklame tugu berdiri (totem) raksasa untuk penunjuk lokasi pinggir jalan raya. Menggunakan kontruksi cakar ayam, besi siku, ACP (Aluminum Composite Panel) dan sistem pencahayaan LED heavy duty.",
+                material: "Pipe Steel + ACP + Acrylic",
+                lighting: "High-Power Floodlight LED",
+                usage: "Outdoor Jalan Utama / Gedung",
+                warranty: "18 Bulan",
+                popular: false
+            },
+            {
+                id: 5,
+                name: "Acrylic Signboard Door & Room Reklame",
+                category: "acrylic",
+                categoryLabel: "Reklame Acrylic",
+                price: "Rp 180.000 / Unit",
+                gallery: [
+                    {
+                        url: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=800&q=80",
+                        type: "Foto Real Produk",
+                        thumbLabel: "Foto Real"
+                    },
+                    {
+                        url: "https://placehold.co/800x800/1c2541/ffbe0b?text=INFOGRAFIK+SIGNBOARD%0A-%0A1.+Akrilik+Marga+Cipta+5mm%0A2.+UV+Flatbed+Direct+Print%0A3.+Pen+Stainless+Penahan%0A4.+Tahan+Gores+%26+Luntur",
+                        type: "Infografis Cetak & Material",
+                        thumbLabel: "Infografis"
+                    },
+                    {
+                        url: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",
+                        type: "Pemasangan Pintu Ruangan Kantor",
+                        thumbLabel: "Portofolio"
+                    }
+                ],
+                youtubeEmbed: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0",
+                description: "Papan penunjuk arah ruangan atau plang nama akrilik dengan pen stainless penahan ke dinding. Dicetak rapi menggunakan UV direct print anti gores.",
+                material: "Akrilik Bening 5mm + Pen Stainless",
+                lighting: "Non-Lampu / Minimalis",
+                usage: "Indoor Kantor / Hotel",
+                warranty: "12 Bulan",
+                popular: false
+            },
+            {
+                id: 6,
+                name: "Huruf Timbul Akrilik LED Nyala Depan",
+                category: "huruftimbul",
+                categoryLabel: "Huruf Timbul",
+                price: "Rp 15.000 / cm",
+                gallery: [
+                    {
+                        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+                        type: "Foto Real Produk",
+                        thumbLabel: "Foto Real"
+                    },
+                    {
+                        url: "https://placehold.co/800x800/0b132b/00f5d4?text=INFOGRAFIK+LED+FRONT-LIT%0A-%0A1.+Muka+Akrilik+Warna+3mm%0A2.+Lis+Samping+Galvanis/Spon%0A3.+Modul+LED+Samsung+IP67%0A4.+Trafo+Rainproof+12V",
+                        type: "Infografis Struktur Komponen",
+                        thumbLabel: "Infografis"
+                    },
+                    {
+                        url: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+                        type: "Hasil Terpasang Fasad Restoran",
+                        thumbLabel: "Portofolio"
+                    }
+                ],
+                youtubeEmbed: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0",
+                description: "Huruf 3D dengan permukaan depan akrilik warna/stiker yang menyala terang di malam hari. Bagian samping menggunakan lis spon / galvanis / stainless.",
+                material: "Front Acrylic 3mm + Lis Stainless/Spon",
+                lighting: "Samsung LED Module IP67",
+                usage: "Fasad Ruko / Minimarket / Mall",
+                warranty: "12 Bulan",
+                popular: true
+            }
+        ];
+
+        let selectedProduct = null;
+        let activeCategory = 'all';
+        let currentMediaTab = 'photo'; // 'photo' or 'video'
+        let currentImageIndex = 0;
+
+        // Render Initial Products
+        document.addEventListener("DOMContentLoaded", () => {
+            renderProducts(productsData);
+        });
+
+        function renderProducts(items) {
+            const grid = document.getElementById('productGrid');
+            const emptyState = document.getElementById('emptyState');
+
+            if (items.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            grid.innerHTML = items.map(product => `
+                <div onclick="openModal(${product.id})" class="group bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-slate-900">
+                            <img src="${product.gallery[0].url}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                            
+                            <div class="absolute top-3 left-3 flex gap-2">
+                                <span class="bg-brand-navy/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">
+                                    ${product.categoryLabel}
+                                </span>
+                            </div>
+                            
+                            ${product.popular ? `
+                                <div class="absolute top-3 right-3 bg-brand-gold text-brand-navy font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider shadow">
+                                    <i class="fa-solid fa-fire mr-1"></i> Populer
+                                </div>
+                            ` : ''}
+
+                            <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] px-2 py-0.5 rounded flex items-center gap-1">
+                                <i class="fa-solid fa-camera"></i> 3 Media
+                            </div>
+                        </div>
+
+                        <div class="p-5">
+                            <h3 class="font-extrabold text-slate-800 text-base group-hover:text-brand-blue transition line-clamp-1">${product.name}</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2 leading-relaxed">${product.description}</p>
+                            
+                            <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-600">
+                                <span class="bg-slate-100 px-2 py-1 rounded text-slate-700 font-medium"><i class="fa-solid fa-cube text-slate-400 mr-1"></i>${product.material.split('+')[0]}</span>
+                                <span class="bg-slate-100 px-2 py-1 rounded text-slate-700 font-medium"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i>${product.lighting.split(' ')[0]}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-50 mt-2">
+                        <div>
+                            <span class="block text-[10px] text-slate-400 font-semibold uppercase">Estimasi Biaya</span>
+                            <span class="text-sm font-extrabold text-brand-amber">${product.price}</span>
+                        </div>
+                        <button class="bg-slate-100 group-hover:bg-brand-navy group-hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl text-xs transition duration-200 flex items-center gap-1.5">
+                            <span>Detail & Video</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function setCategory(category) {
+            activeCategory = category;
+            const buttons = document.querySelectorAll('.category-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-navy', 'text-white', 'shadow-md', 'shadow-brand-navy/20');
+                btn.classList.add('bg-white', 'text-slate-600', 'hover:bg-slate-100', 'border', 'border-slate-200');
+            });
+            event.currentTarget.classList.remove('bg-white', 'text-slate-600', 'hover:bg-slate-100', 'border', 'border-slate-200');
+            event.currentTarget.classList.add('bg-brand-navy', 'text-white', 'shadow-md', 'shadow-brand-navy/20');
+
+            filterProducts();
+        }
+
+        function filterProducts() {
+            const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = productsData.filter(product => {
+                const matchesCategory = (activeCategory === 'all') || (product.category === activeCategory);
+                const matchesSearch = product.name.toLowerCase().includes(searchQuery) || product.description.toLowerCase().includes(searchQuery);
+                return matchesCategory && matchesSearch;
+            });
+            renderProducts(filtered);
+        }
+
+        // Modal Media Gallery Management
+        function openModal(productId) {
+            selectedProduct = productsData.find(p => p.id === productId);
+            if (!selectedProduct) return;
+
+            // Set Text Data
+            document.getElementById('modalTitle').innerText = selectedProduct.name;
+            document.getElementById('modalCategoryBadge').innerText = selectedProduct.categoryLabel;
+            document.getElementById('modalPrice').innerText = selectedProduct.price;
+            document.getElementById('modalDescription').innerText = selectedProduct.description;
+            document.getElementById('modalSpecMaterial').innerText = selectedProduct.material;
+            document.getElementById('modalSpecLighting').innerText = selectedProduct.lighting;
+            document.getElementById('modalSpecUsage').innerText = selectedProduct.usage;
+            document.getElementById('modalSpecWarranty').innerText = selectedProduct.warranty;
+
+            // Set Initial Image & Thumbnails
+            currentImageIndex = 0;
+            updateMainImage(0);
+            renderThumbnails();
+
+            // Reset Tab to Photo
+            switchMediaTab('photo');
+
+            // Show Modal Animation
+            const modal = document.getElementById('productModal');
+            const container = document.getElementById('modalContainer');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                container.classList.remove('scale-95', 'opacity-0');
+                container.classList.add('scale-100', 'opacity-100');
+            }, 10);
+
+            document.body.style.overflow = 'hidden';
+        }
+
+        function updateMainImage(index) {
+            currentImageIndex = index;
+            const media = selectedProduct.gallery[index];
+            const mainImg = document.getElementById('modalMainImage');
+            const badge = document.getElementById('imageTypeBadge');
+
+            mainImg.src = media.url;
+            badge.innerText = media.type;
+
+            // Highlight Active Thumbnail Border
+            const thumbs = document.querySelectorAll('.thumb-btn');
+            thumbs.forEach((t, i) => {
+                if(i === index) {
+                    t.classList.add('border-brand-neon', 'ring-2', 'ring-brand-neon/40');
+                    t.classList.remove('border-transparent', 'opacity-60');
+                } else {
+                    t.classList.remove('border-brand-neon', 'ring-2', 'ring-brand-neon/40');
+                    t.classList.add('border-transparent', 'opacity-60');
+                }
+            });
+        }
+
+        function renderThumbnails() {
+            const container = document.getElementById('thumbnailContainer');
+            container.innerHTML = selectedProduct.gallery.map((item, index) => `
+                <button onclick="switchMediaTab('photo'); updateMainImage(${index})" class="thumb-btn border-2 ${index === 0 ? 'border-brand-neon ring-2 ring-brand-neon/40' : 'border-transparent opacity-60'} relative h-14 rounded-lg overflow-hidden bg-slate-950 transition-all hover:opacity-100">
+                    <img src="${item.url}" alt="${item.thumbLabel}" class="w-full h-full object-cover">
+                    <span class="absolute bottom-0 inset-x-0 bg-black/80 text-white text-[9px] font-bold text-center py-0.5 truncate px-1">
+                        ${item.thumbLabel}
+                    </span>
+                </button>
+            `).join('');
+        }
+
+        function switchMediaTab(tab) {
+            currentMediaTab = tab;
+            const photoWrapper = document.getElementById('imageViewWrapper');
+            const videoWrapper = document.getElementById('videoViewWrapper');
+            const btnPhoto = document.getElementById('btnTabPhoto');
+            const btnVideo = document.getElementById('btnTabVideo');
+            const youtubeIframe = document.getElementById('modalYoutubeIframe');
+
+            if (tab === 'photo') {
+                photoWrapper.classList.remove('hidden');
+                videoWrapper.classList.add('hidden');
+
+                // Button styling
+                btnPhoto.className = "px-3 py-1 rounded-md text-xs font-bold transition bg-brand-blue text-white shadow";
+                btnVideo.className = "px-3 py-1 rounded-md text-xs font-bold transition text-slate-400 hover:text-white";
+
+                // Stop Youtube playback when switching back
+                youtubeIframe.src = "";
+            } else {
+                photoWrapper.classList.add('hidden');
+                videoWrapper.classList.remove('hidden');
+
+                // Button styling
+                btnVideo.className = "px-3 py-1 rounded-md text-xs font-bold transition bg-red-600 text-white shadow";
+                btnPhoto.className = "px-3 py-1 rounded-md text-xs font-bold transition text-slate-400 hover:text-white";
+
+                // Load Youtube Embed
+                youtubeIframe.src = selectedProduct.youtubeEmbed;
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('productModal');
+            const container = document.getElementById('modalContainer');
+            const youtubeIframe = document.getElementById('modalYoutubeIframe');
+            
+            // Stop Youtube playback
+            youtubeIframe.src = "";
+
+            container.classList.remove('scale-100', 'opacity-100');
+            container.classList.add('scale-95', 'opacity-0');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 200);
+        }
+
+        // WhatsApp Direct Link Generator
+        function sendWhatsAppOrder() {
+            if (!selectedProduct) return;
+
+            const selectedSize = document.getElementById('modalSizeSelect').value;
+            const selectedLight = document.getElementById('modalLightSelect').value;
+            const phoneNumber = "6285799494999"; 
+
+            const textMessage = `Halo Hakken, saya mau pesan & konsultasi produk Reklame dari katalog website:
+            
+*Nama Produk:* ${selectedProduct.name}
+*Kategori:* ${selectedProduct.categoryLabel}
+*Kisaran Harga:* ${selectedProduct.price}
+*Pilihan Ukuran:* ${selectedSize}
+*Spesifikasi Lampu:* ${selectedLight}
+
+Mohon bantuan penawaran harga resmi (RAB) dan jadwal survei lokasi. Terima kasih!`;
+
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(textMessage)}`, '_blank');
+        }
+
+        function contactWhatsAppDirect() {
+            const phoneNumber = "6285799494999";
+            const textMessage = "Halo HAKKEN! Saya ingin berkonsultasi mengenai pemesanan Reklame /Neon Box/ Logo.";
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(textMessage)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
