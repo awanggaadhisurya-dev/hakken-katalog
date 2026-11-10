@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "katalog"
+    label: "Manajemen Katalog"
+    files:
+      - label: "Daftar Produk"
+        name: "products"
+        file: "products.json"
+        fields:
+          - name: "items"
+            label: "Daftar Produk"
+            widget: "list"
+            fields:
+              - {label: "ID File (Opsional)", name: "id_file", widget: "string", required: false}
+              - {label: "Nama Card / Produk", name: "nama_card", widget: "string"}
+              - {label: "Kategori", name: "kategori", widget: "select", options: ["neonbox", "papan nama dan arah", "huruf timbul nyala", "huruf timbul tidak nyala", "neonflex", "backdrop logo", "Ornamen pagar dan fasad", "nomor rumah"]}
+              - {label: "Sub Kategori", name: "sub_kategori", widget: "string", required: false}
+              - {label: "Link Foto Cloudinary", name: "link_cloudinary", widget: "string"}
+              - {label: "Deskripsi Produk", name: "deskripsi", widget: "text"}
