@@ -33,8 +33,9 @@ HTML
         async function loadProducts() {
             try {
                 // Mengambil file products.json (pastikan nama file sama persis)
-                const response = await fetch('products.json');
-                const products = await response.json();
+             const response = await fetch('products.json');
+const data = await response.json();
+const products = data.items; // Menargetkan array di dalam "items"
 
                 // Hapus teks loading
                 loadingText.remove();
