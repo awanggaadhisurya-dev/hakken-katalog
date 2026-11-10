@@ -1,27 +1,12 @@
-[
-  "items":
-  {
-    "id_file": "001.jpg",
-    "nama_card": "Huruf Timbul Stainless LED Premium",
-    "kategori": "huruf timbul nyala",
-    "sub_kategori": "stainless muka nyala",
-    "link_cloudinary": "https://res.cloudinary.com/dzqcav0jj/image/upload/v1794303271/001_nwfa4k.jpg",
-    "deskripsi": "Huruf timbul dengan material stainless steel anti karat. Memancarkan cahaya terang dari bagian depan (muka nyala) menggunakan LED modul tahan cuaca. Cocok untuk identitas toko di malam hari."
-  },
-  {
-    "id_file": "002.jpg",
-    "nama_card": "Neonbox Akrilik Dua Sisi",
-    "kategori": "neonbox",
-    "sub_kategori": "",
-    "link_cloudinary": "https://res.cloudinary.com/dzqcav0jj/image/upload/v1794303272/002_nwfa4k.jpg",
-    "deskripsi": "Neonbox rangka aluminium kokoh dengan visual akrilik dua sisi. Dilengkapi lampu LED hemat energi untuk pencahayaan merata."
-  },
-  {
-    "id_file": "003.jpg",
-    "nama_card": "Logo Backdrop Ruang Resepsionis",
-    "kategori": "backdrop logo",
-    "sub_kategori": "",
-    "link_cloudinary": "https://res.cloudinary.com/dzqcav0jj/image/upload/v1794303273/003_nwfa4k.jpg",
-    "deskripsi": "Logo backdrop elegan untuk area lobby atau ruang resepsionis. Memberikan kesan profesional dan mewah untuk interior perusahaan."
-  }
-]
+{
+  "items": [
+    {
+      "id_file": "001.jpg",
+      "nama_card": "Huruf Timbul Stainless LED Premium",
+      "kategori": "huruf timbul nyala",
+      "sub_kategori": "stainless muka nyala",
+      "link_cloudinary": "https://res.cloudinary.com/dzqcav0jj/image/upload/v1794303271/001_nwfa4k.jpg",
+      "deskripsi": "Huruf timbul dengan material stainless steel anti karat. Memancarkan cahaya terang dari bagian depan (muka nyala) menggunakan LED modul tahan cuaca. Cocok untuk identitas toko di malam hari."
+    }
+  ]
+}
